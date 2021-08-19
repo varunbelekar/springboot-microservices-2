@@ -1,0 +1,18 @@
+hibernate:
+    format_sql: true
+    show_sql: true
+server:
+    port: 8082
+spring:
+    application:
+        name: USER-SERVICE
+    config:
+        import: configserver:http://localhost:9296/
+    datasource:
+        password: pwd703532
+        url: jdbc:postgresql://localhost:5432/userservice
+        username: postgres
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update

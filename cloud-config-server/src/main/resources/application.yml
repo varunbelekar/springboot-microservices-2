@@ -1,0 +1,15 @@
+server:
+  port: 9296
+  
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/varunbelekar/config-server
+          username: varun.belekar@somaiya.edu
+          password: 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
+          default-label: main
+          clone-on-start: true
