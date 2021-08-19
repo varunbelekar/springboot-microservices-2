@@ -9,10 +9,10 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: USER-SERVICE
-          uri: lb://USER-SERVICE
+        - id: DEPARTMENT-SERVICE
+          uri: lb://DEPARTMENT-SERVICE
           predicates:
-            - Path=/user/**
+            - Path=/department/**
         - id: USER-SERVICE
           uri: lb://USER-SERVICE
           predicates:

@@ -10,6 +10,6 @@ spring:
         git:
           uri: https://github.com/varunbelekar/config-server
           username: varun.belekar@somaiya.edu
-          password: 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
+          password: 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
           default-label: main
           clone-on-start: true
